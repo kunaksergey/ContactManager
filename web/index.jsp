@@ -14,12 +14,29 @@
     <title>$Title$</title>
   </head>
   <body>
-  <a href="<c:url value="/logout/"/>">
+  <a href="<c:url value="/logout"/>">
     <spring:message code="label.logout"/>
   </a>
-  <form:form action="add" method="POST">
+  <h2><spring:message code="label.title"/> </h2>
+  <form:form action="add" method="POST" commandName="contact">
     <table>
-
+      <tr>
+        <td><form:label path="firstName">
+          <spring:message code="label.firstaname"/>
+        </form:label>
+        </td>
+        <td><form:input path="firstname"/></td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+      </tr>
       </table>
   </form:form>
   </body>
